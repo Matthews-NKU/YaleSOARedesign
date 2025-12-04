@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yale School of Art Redesign</title>
+  <style>
+		header { 
+			background-color: #EDECE8;
+			padding-left: 20px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #224570;
+		}
+		header img {
+			vertical-align: middle;
+			height: 70px;
+			width: auto;
+		}
+		.YaleTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.SchoolTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 35px;
+		}
+		.Navigation {
+			display: flex;
+			align-items: flex-start;	
+			padding-left: 20px;
+		}
+		.Navigation a {
+			color: #224570;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}	
+		.HeaderButtons {
+			padding-right: 20px;
+		    display: flex;
+			align-items: center;
+		}
+		.ButtonDetails {
+			border-radius: 8px;
+			color: white;
+			background-color: orange;
+			font-size: 20px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		}
+		.OnThisPage {
+			padding-right: 15px;
+		}		
+		.OnThisPage a {
+			color: white;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.MainContainer {
+			display: flex;
+		}
+		.SideBar {
+			color: white;
+			flex: 1;
+			padding: 15px;
+			background-color: #001C42;
+		}
+		.Content {
+			flex-direction: column;
+			display: flex;
+			flex: 5;
+			align-items: center;
+			justify-content: flex-start;
+			padding-bottom: 15px;
+		}
+		.card {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: orange;
+		}
+		.RoundedImage	{
+			border-radius: 15px;
+		}
+		.Content .card {
+			background-color: orange;
+			max-width: 60%;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			justify-content: flex-start;
+		}
+		.Content h2 {
+			align-self: flex-start;
+			margin-left: 20px;
+			color: #224570;
+			border-style: solid;
+			padding: 20px;
+		}
+		.BulletinContainer, .SOAcontainer {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 20px;
+			justify-content: center;
+			gap: 25px;
+		}
+		.ContentCalendar {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: #286DC6;
+		}
+		.SOAinfo {
+			background-color: #2E69B2;
+			color: white;
+			gap: 25px; 
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			font-size: 25px;
+		}
+		.SOAtext {
+			padding: 20px;
+		}
+		.SOAimg {
+			width: 100%;
+			display: block;
+			margin: 0;
+		}
+		.FooterTop {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			color: #224570;
+			justify-content: space-between;
+		}
+		.FooterBottom {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid #ccc;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 13px;
+			color: #555;
+		}
+		footer a {
+			color: #224570;
+		}
+		.SocialMedia {
+			font-size: 50px;
+			padding-top: 15px;
+		}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" href="img/YalePicture.jpg">
+ </head>
+ <body>
+	<header>
+		<div>
+			<h1>
+				<img src="img/YalePicture.jpg" alt="Yale Coat of Arms">
+					<span class="YaleTitle">Yale</span>
+					<span class="SchoolTitle">SCHOOL OF ART</span>
+			</h1>
+			<nav class="Navigation" aria-label="Main Navigation">
+				<a href="DouglasMatthews_FinalGroup.html">Home </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup2.html">About the School </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup3.html">Apply to the School</a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup4.html">Exhibitions </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup5.html">Publications </a> &nbsp;
+				<a href="https://www.art.yale.edu/news">News </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup7.html">Public Events </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup8.html">Faculty & Staff </a> &nbsp;
+			</nav>
+		</div>
+		<div class="HeaderButtons">
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Login</button></a>
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Edit This Page</button></a>
+		</div>
+	</header>
+	
+	<main class="MainContainer">
+		<div class="SideBar">
+			<div class="card">
+				This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community—graduate students, faculty, staff, and alums—have the ability to add new content and pages, and to edit most of the site’s existing content.
+				Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+			</div>
+			<img src="img/PEBackground.jpg" alt="Triangle design">
+			<div class="card">
+				<a href="https://events.yale.edu/group/school-of-art">For events open to the Yale community, you can view the Yale calendar listings here</a>
+			</div>
+			<div class="card">
+				Join our FaceBookGroup below to hear about new and upcoming events available to the public!
+			</div>
+			<div class="card">
+				<a href="https://www.art.yale.edu/about/land-acknowledgement">Land Acknowledgment of the Mohegan,
+				Mashantucket Pequot, Eastern Pequot, Schaghticoke, Golden Hill Paugussett, Niantic,
+				the Quinnipiac, and other Algonquian speaking peoples</a>
+			</div>
+		</div>
+	<div class="Content">
+			<div class="SOAinfo">
+				<p class="SOAtext">Welcome to the School of Art’s public events calendar, initiated in the summer of 2020. To stay updated on new events as they’re confirmed, all members of the public are invited to subscribe this calendar to their own calendaring software by clicking the “Subscribe” button below.
+				</p>
+				<img src="img/streetHall.jpg" class="SOAimg">
+			</div>	
+		<div class="BulletinContainer">
+			<a name="mmi-28825"></a>
+				<div id="mmi-28825" class="scrolling-text-module colspan-4 rag measurable magic-module" data-event-category="magic_module/scrolling_text_module/28825" data-event-label="Scrolling Text Module 28825 (8/14)" data-instance-id="28825" data-id="93945"> 
+				<div class="scrolling-text-module__inner" style="max-height: 240.0em" tabindex="0">				
+						<div class="eca-app-container" data-widgetuuid="457d85b7-db7e-4f19-a97f-2bf0e901a90e"></div>
+
+					<script>(function () {
+						window.eventCalId=5535;
+						var integrationScript = document.createElement("script");
+						integrationScript.async = 1;
+						integrationScript.setAttribute("src", "https://api.eventcalendarapp.com/integration-script.js");
+						document.head.appendChild(integrationScript);
+						if (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init("457d85b7-db7e-4f19-a97f-2bf0e901a90e");}})();
+					</script>
+				</div>	
+				</div>			
+		</div>
+	</div>
+	</main>		
+	<footer>
+		<div class="FooterTop">
+			<div>
+				<div>
+					Address and P.O. Box For The Yale School of Art:
+					<br>
+					Yale School of Art
+					1156 Chapel Street, POB 208339
+					New Haven, Connecticut, 06520-8339
+				</div>
+				<figure>
+					<figcaption>Social Media:</figcaption>
+					<div class="SocialMedia">
+						<a href="https://www.instagram.com/yaleschoolofart/" target="_blank" aria-label="Yale School of Art on Instagram"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank" aria-label="Yale School of Art on FaceBook"><i class="bi bi-facebook"></i></a>	
+						<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank" aria-label="Yale School of Art on YouTube"><i class="bi bi-youtube"></i></a>
+					</div>
+				</figure>
+			</div>
+				<figure>
+					<figcaption>Important Links</figcaption>
+					<ul>
+						<li><a href="https://www.art.yale.edu/about/support-the-school">Supporting the School</a></li>
+						<li><a href="https://www.art.yale.edu/about/visiting">Schedule a Visit</a></li>
+						<li><a href="https://www.art.yale.edu/about/contact">Contact</a></li>
+						<li><a href="https://www.art.yale.edu/sitemap">Sitemap</a></li>
+						<li><a href="https://your.yale.edu/policies-procedures/1605-web-accessibility-policy">Information on Accessibility at Yale</a></li>
+					</ul>
+				</figure>
+			<img src="img/YalePicture.jpg" alt="Yale Coat of Arms" height="100px" width="100px">
+		</div>
+		<div class="FooterBottom">
+			© 2025 Yale School of Art. All rights reserved.
+		</div>
+	</footer>	
+ </body>

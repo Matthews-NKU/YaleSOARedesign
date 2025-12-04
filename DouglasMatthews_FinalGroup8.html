@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty & Staff - Yale School of Art</title>
+  <style>
+		header { 
+			background-color: #EDECE8;
+			padding-left: 20px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #224570;
+		}
+		header img {
+			vertical-align: middle;
+			height: 70px;
+			width: auto;
+		}
+		.YaleTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.SchoolTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 35px;
+		}
+		.Navigation {
+			display: flex;
+			align-items: flex-start;	
+			padding-left: 20px;
+		}
+		.Navigation a {
+			color: #224570;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}	
+		.HeaderButtons {
+			padding-right: 20px;
+		    display: flex;
+			align-items: center;
+		}
+		.ButtonDetails {
+			border-radius: 8px;
+			color: white;
+			background-color: orange;
+			font-size: 20px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		}
+		.OnThisPage {
+			padding-right: 15px;
+		}		
+		.OnThisPage a {
+			color: white;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.MainContainer {
+			display: flex;
+		}
+		.SideBar {
+			color: white;
+			flex: 1;
+			padding: 15px;
+			background-color: #001C42;
+		}
+		.Content {
+			flex-direction: column;
+			display: flex;
+			flex: 5;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		.card {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: orange;
+		}
+		.RoundedImage	{
+			border-radius: 15px;
+		}
+		.Content .card {
+			background-color: orange;
+			max-width: 60%;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			justify-content: flex-start;
+		}
+		.Content h2 {
+			align-self: flex-start;
+			margin-left: 20px;
+			color: #224570;
+			border-style: solid;
+			padding: 20px;
+		}
+		.BulletinContainer, .SOAcontainer {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 20px;
+			justify-content: center;
+			gap: 25px;
+		}
+		.ContentCalendar {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: #286DC6;
+		}
+		.SOAinfo {
+			background-color: #2E69B2;
+			color: white;
+			gap: 25px; 
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			font-size: 25px;
+		}
+		.SOAtext {
+			padding: 20px;
+		}
+		.SOAimg {
+			width: 100%;
+			display: block;
+			margin: 0;
+		}
+		.FooterTop {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			color: #224570;
+			justify-content: space-between;
+		}
+		.FooterBottom {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid #ccc;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 13px;
+			color: #555;
+		}
+		footer a {
+			color: #224570;
+		}
+		.SocialMedia {
+			font-size: 50px;
+			padding-top: 15px;
+		}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" href="img/YalePicture.jpg">
+ </head>
+ <body>
+	<header>
+		<div>
+			<h1>
+				<img src="img/YalePicture.jpg" alt="Yale Coat of Arms">
+					<span class="YaleTitle">Yale</span>
+					<span class="SchoolTitle">Faculty & Staff</span>
+			</h1>
+			<nav class="Navigation" aria-label="Main Navigation">
+				<a href="DouglasMatthews_FinalGroup.html">Home </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup2.html">About the School </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup3.html">Apply to the School</a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup4.html">Exhibitions </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup5.html">Publications </a> &nbsp;
+				<a href="https://www.art.yale.edu/news">News </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup7.html">Public Events </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup8.html">Faculty & Staff </a> &nbsp;
+			</nav>
+		</div>
+		<div class="HeaderButtons">
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Login</button></a>
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Edit This Page</button></a>
+		</div>
+	</header>
+	
+	<main class="MainContainer">
+		<div class="SideBar">
+			<div class="card">
+				Note: Faculty appointments in each area of graduate study correspond to varying levels of engagement at the School of Art. This page reflects the faculty and staff at the Yale School of Art during the 2024-2025 academic year.
+				Full-Time Faculty: On campus regularly each week for courses, critiques, studio visits, advising and other service. Full Time faculty also includes the Directors and Assistant Directors for each area of study.
+				Part-Time Faculty: Teaching or co-teaching a weekly course or courses
+				Visiting Critics: On campus occasionally for studio/desk visits or workshops
+			</div>
+		</div>
+		<div class="Content">
+			<div class="BulletinContainer">
+				<div class="card">
+					<h3>Academic Leadership</h3>
+					<ul>
+						<li>
+							<a href="https://www.art.yale.edu/KymberlyPinder">Kymberly Pinder</a>, Stavros Niarchos Foundation Dean; Professor of Art and History of Art
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AnokaFaruqee">Anoka Faruqee</a>, Associate Dean; Professor in Painting/Printmaking 
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/GregoryCrewdson">Gregory Crewdson</a>, Professor; Director of Graduate Studies in Photography
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MelekoMokgosi">Meleko Mokgosi</a>, Professor; Director of Graduate Studies in Painting and Printmaking
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/NontsikeleloMutiti">Nontsikelelo Mutiti</a>, Assistant Professor; Director of Graduate Studies in Graphic Design
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AkiSasamoto">Aki Sasamoto</a>, Professor; Director of Graduate Studies in Sculpture
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AlexandriaSmith">Alexandria Smith</a>, Assistant Professor; Director of Undergraduate Studies in Art
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/SarahStevens-Morling">Sarah Stevens-Morling</a>, Senior Critic; Assistant Dean, Communications and Digital Media
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/taryn-wolf">Taryn Wolf, Assistant Dean, Academic Affairs</a>
+						</li>
+					</ul>			
+				</div>
+				<div class="card">
+					<h3>Faculty Governing Board</h3>
+					<ul class="scrolling-list-module__list list--blank">
+						<li>
+							<a href="https://www.art.yale.edu/GregoryCrewdson">Gregory Crewdson</a>, Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AnokaFaruqee">Anoka Faruqee</a>, Associate Dean; Professor in Painting/Printmaking
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MartinKersels">Martin Kersels</a>, Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MartaKuzma">Marta Kuzma</a>, Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MelekoMokgosi">Meleko Mokgosi</a>, Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/NontsikeleloMutiti">Nontsikelelo Mutiti</a>, Assistant Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/elle-perez">Elle Pérez</a>, Assistant Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/KymberlyPinder">Kymberly Pinder</a>, Stavros Niarchos Foundation Dean; Professor of Art and History of Art
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AkiSasamoto">Aki Sasamoto</a>, Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AlexandriaSmith">Alexandria Smith</a>, Assistant Professor
+						</li>
+					</ul>			
+				</div>
+			</div>
+			<div class="BulletinContainer">
+				<div class="card">
+					<h3>Graphic Design</h3>
+					<ul>
+						<li>
+							<strong><a href="https://www.art.yale.edu/nontsikelelo-mutiti" target="_blank">Nontsikelelo Mutiti</a></strong>, Assistant Professor, Director of Graduate Studies in Graphic Design (on leave Fall 2025)
+						</li>
+						<li>
+							<strong><a href="https://www.art.yale.edu/HenkVanAssen">Henk van Assen</a></strong>, Interim Director (Fall 2025), Senior Critic
+						</li>
+						<li>
+							<strong><a href="https://www.art.yale.edu/AndrewWalsh-Lister">Andrew Walsh-Lister</a></strong>, Senior Critic; Graduate Coordinator
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Senior Admin Asst.:</strong> <a href="https://www.art.yale.edu/LarissaHall">Larissa Hall</a>
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Full-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/alvin-ashiatey-faculty">Alvin Ashiatey</a>, Lecturer, Graphic Design Lab Coordinator
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/JulianBittiner">Julian Bittiner</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/TirireeKananuruk">Tiriree Kananuruk</a>, Lecturer
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Part-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/YejuChoi">Yeju Choi</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AliceChung">Alice Chung</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AnnaCraycroft">Anna Craycroft</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/WilliamGoldweit-Denton">Will   Denton</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/NeilGoldberg">Neil Goldberg</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RileyHooker">Riley Hooker</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/PamelaHovland">Pamela Hovland</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/BiancaIbarlucea">Bianca Ibarlucea</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ShiraInbar">Shira Inbar</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/NicoleKaack">Nicole Kaack</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/GeoffKaplan">Geoff Kaplan</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RachelKauder-Nalebuff">Rachel Kauder-Nalebuff</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AndrewSloat">Andrew Sloat</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/nina-stoessinger">Nina Stössinger</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AndreaTrabucco-Campos">Andrea Trabucco-Campos</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/BryantWells-faculty">Bryant Wells</a>, Lecturer
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3>Painting / Printmaking</h3>
+					<ul>
+						<li>
+							<strong><a href="https://www.art.yale.edu/MelekoMokgosi">Meleko Mokgosi</a></strong>, Professor, Director of Graduate Studies in Painting and Printmaking
+						</li>
+						<li>
+							<strong><a href="https://www.art.yale.edu/MariaDeLosAngeles">Maria De Los Angeles</a></strong>, Critic; Assistant Director in Painting and Printmaking
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Senior Admin Asst.:</strong> <a href="https://www.art.yale.edu/kris">Kris Mandelbaum</a>
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Full-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ErickBenitez">Erick Antonio Benitez</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AnokaFaruqee">Anoka Faruqee</a>, Associate Dean; Professor in Painting/Printmaking
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MattKeegan">Matt Keegan</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/hasabie-kidanu-faculty">Hasabie Kidanu</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ByronKim">Byron Kim</a>, Senior Critic; Co-Director of Yale Norfolk
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/SophyNaess">Sophy Naess</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AlexandriaSmith">Alexandria Smith</a>, Assistant Professor; Director of Undergraduate Studies
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AlexanderValentine">Alexander Valentine</a>, Senior Critic; Printshop Coordinator  
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AnahitaVossoughi">Anahita Vossoughi</a>, Critic; Associate Director of Digital Media
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Part-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/VambaBility">Vamba Bility</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ZoilaAndreaCoc-Chang">Zoila Andrea Coc-Chang</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RachelleDang">Rachelle Dang</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/DaniLevine">Dani Levine</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/JenniferPranolo">Jennifer Pranolo</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/KristenHileman">Kristen Hileman</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/JenniferHirsh">Jennifer Hirsh</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ScottMalbaurn">Scott Malbaurn</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/Irene%20Michnicki">Irene Michnicki</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MikeRader">Mike Rader</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RyanSluggett">Ryan Sluggett</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MattWatson">Matt Watson</a>, Critic
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Visiting Critics</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/KeltieFerris">Keltie Ferris</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/CarmenHermo">Carmen Hermo</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/OscaryiHou">Oscar yi Hou</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/marie-lorenz-faculty">Marie Lorenz</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RonnyQuevedo">Ronny Quevedo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="BulletinContainer">
+				<div class="card">
+					<h3>Sculpture</h3>
+					<ul>
+							<li>
+								<strong><a href="https://www.art.yale.edu/KeltieFerris"AkiSasamoto">Aki Sasamoto</a></strong>, Professor, Director of Graduate Studies in Sculpture (on leave Spring 2026)
+							</li>
+							<li>
+								<strong><a href="https://www.art.yale.edu/KeltieFerris"MartinKersels">Martin Kersels</a></strong>, Interim Director (Spring 2026), Professor
+							</li>
+							<li>
+								<strong><a href="https://www.art.yale.edu/KeltieFerris"SandraBurns">Sandra Burns</a></strong>, Senior Critic; Assistant Director in Sculpture
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<strong>Senior Admin Asst.:</strong> <a href="https://www.art.yale.edu/KeltieFerris"allyse-corbin">Allyse Corbin</a>
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<strong>Full-Time Faculty</strong>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"LiliChin">Lili Chin</a>, Lecturer
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"KameelahJananRasheed">Kameelah Janan Rasheed</a>, Critic
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<strong>Part-Time Faculty</strong>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"ian-page-faculty">Ian Page</a>, Critic
+							</li>
+							<li>
+								
+							</li>
+							<li>
+								<strong>Visiting Critics</strong>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"AmericanArtist">American Artist</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"HowardEl-Yasin">Howard El-Yasin</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"MichaelJoo">Michael Joo</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"AutumnKnight">Autumn Knight</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"LeighLedare">Leigh Ledare</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"GalaPorrasKim">Gala Porras-Kim</a>
+							</li>
+							<li>
+								<a href="https://www.art.yale.edu/KeltieFerris"RayyaneTabet">Rayyane Tabet</a>
+							</li>
+					</ul>			
+				</div>
+				<div class="card">
+					<h3>Photography</h3>
+					<ul>
+						<li>
+							<strong><a href="https://www.art.yale.edu/GregoryCrewdson">Gregory Crewdson</a></strong>, Professor, Director of Graduate Studies in Photography
+						</li>
+						<li>
+							<strong><a href="https://www.art.yale.edu/LisaKereszi">Lisa Kereszi</a></strong>, Senior Critic; Assistant Director in Photography
+						</li>
+						<li>
+								
+						</li>
+						<li>
+							<strong>Senior Admin Asst.:</strong> <a href="https://www.art.yale.edu/allyse-corbin">Allyse Corbin</a>
+						</li>
+						<li>
+								
+						</li>
+						<li>
+							<strong>Full-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/SamContis">Sam Contis</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/BenDonaldson">Benjamin Donaldson</a>, Senior Critic; Photography Lab Coordinator
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/elle-perez">Elle Pérez</a>, Assistant Professor
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/JohnPilson">John Pilson</a>, Senior Critic  
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Part-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AlissaBennett">Alissa Bennett</a>, Lecturer
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/VinsonCunningham">Vinson Cunningham</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/tommy-kha-faculty">Tommy Kha</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MatthewLeifheit">Matthew Leifheit</a>, Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/LesleyMartin">Lesley Martin</a>, Critic
+							</li>
+						<li>
+							<a href="https://www.art.yale.edu/EvaOLeary">Eva O'Leary</a>, Critic
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Visiting Critics</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/JudyDitner">Judy Ditner</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RoxanaMarcoci">Roxana Marcoci</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/OluremiOnabanjo">Oluremi Onabanjo</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AndrewSawyer">Andrew Sawyer</a>
+						</li>
+					</ul>				
+				</div>
+			</div>
+			<div class="BulletinContainer">
+				<div class="card">
+					<h3>Interdepartmental</h3>
+					<ul class="scrolling-list-module__list list--blank">
+						<li>
+							<strong>Full-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/KymberlyPinder">Kymberly Pinder</a>, Stavros Niarchos Foundation Dean; Professor of Art and History of Art
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/MartaKuzma">Marta Kuzma</a>, Professor of Art
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/SarahOppenheimer">Sarah Oppenheimer</a>, Professor in the Practice
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/ALSteiner">A.L. Steiner</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/SarahStevens-Morling">Sarah Stevens-Morling</a>, Senior Critic; Assistant Dean
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<strong>Part-Time Faculty</strong>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/LeslieDick">Leslie Dick</a>, Senior Critic
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/AyhamGhraowi">Ayham Ghraowi</a>, Critic
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3>Undergraduate</h3>
+				<ul class="scrolling-list-module__list list--blank">
+					<li>
+						<strong><a href="https://www.art.yale.edu/AlexandriaSmith">Alexandria Smith</a></strong>, Assistant Professor, Director of Undergraduate Studies in Art
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Full-Time Faculty</strong>
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/JonathanAndrews">Jonathan Andrews</a>, Lecturer 
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Part-Time Faculty</strong>
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/ElenaBertozzi">Elena Bertozzi</a>, Critic
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/NathanCarter">Nathan Carter</a>, Critic
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/YaminayChaudhri">Yaminay Chaudhri</a>, Critic
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/LuchinaFisher">Luchina Fisher</a>, Lecturer
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/Nate%20Gibbons">Nate Gibbons</a>, Lecturer
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/BenHagari">Ben Hagari</a>, Lecturer
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/JesseMarsolais">Jesse Marsolais</a>, Lecturer
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/JazsalynMcNeil">Jazsalyn McNeil</a>, Lecturer
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/LachellWorkman">Lachell Workman</a>, Lecturer
+					</li>
+				</ul>				
+				</div>
+			</div>
+			<div class="card">
+				<h3>Administration & Staff</h3>
+				<ul class="scrolling-list-module__list list--blank">
+					<li>
+						<strong>Office of the Dean</strong>  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/KymberlyPinder">Kymberly Pinder</a>, Stavros Niarchos Foundation Dean; Professor of Art and History of Art
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/AnokaFaruqee">Anoka Faruqee</a>, Associate Dean; Professor in Painting/Printmaking
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/annie-lin">Annie Lin</a>, Director of Community Engagement and Strategies
+					</li>
+					<li>
+						Maya Lwazi Rose, Senior Administrative Assistant for Dean’s Office
+					</li>
+					<li>
+						Benjamin Weathers, Gallery and Exhibitions Manager
+					</li>
+					<li>
+						Jaime Kricksciun, Gallery Technician
+					</li>
+					<li>
+						Ryan Cyr, Gallery Technician
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Office of Academic Administration and Student Affairs</strong>  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/taryn-wolf">Taryn Wolf</a>, Assistant Dean, Academic Affairs, Student Affairs
+					</li>
+					<li>
+						Nick Rendon, Director, Financial Aid, (Schools of Art and Architecture) 
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/dannika-kemp-avent">Dannika Kemp-Avent</a>, Director of Community Wellness
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/EmilyCappa">Emily Cappa</a>, Registrar  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/SaraCronquist">Sara Cronquist</a>, Senior Administrative Assistant, Admission and Academic Affairs  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/krista-dobson">Krista Dobson</a>, Mental Health and Wellness Counselor (Non-Clinical, Schools of Art, Architecture, Drama)
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Communications and Digital Technology</strong>  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/SarahStevens-Morling">Sarah Stevens-Morling</a>, Assistant Dean, Communications and Digital Media; Senior Critic in Film, Video, &amp; Media
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/AnahitaVossoughi">Anahita Vossoughi</a>, Associate Director, Digital Media; Critic in Painting/Printmaking
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/LindseyMancini">Lindsey Mancini</a>, Assistant Director, Communications  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/edgar-serrano">Edgar Serrano</a>, Equipment Loan and A/V Specialist
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/CatherineThomes">Catherine Thomes</a>, IT Support Technician and Systems Administrator
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Academic Program Administrative Support</strong>
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/allyse-corbin">Allyse Corbin</a>, Senior Administrative Assistant, Photography and Sculpture
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/LarissaHall">Larissa Hall</a>, Senior Administrative Assistant, Graphic Design 
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/kris">Kris Mandelbaum</a>, Senior Administrative Assistant, Painting/Printmaking; Gallery Coordinator
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/sade-torres-pacheco">Sade Torres Pacheco</a>, Senior Administrative Assistant, Undergraduate Studies
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Facilities, Shops, &amp; Labs</strong>
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/john-hogan">John P. Hogan</a>, Director of Facilities
+					</li>
+					<li>
+						Catherine Nelson, Fabrication Shop Co-Manager (Wood)
+					</li>
+					<li>
+						Julia Murray, Fabrication Shop Co-Manager (Metal)
+					</li>
+					<li>
+						Madison Donnelly, Metal and Wood Shop Technician
+					</li>
+					<li>
+						Jason Friedes, Metal and Wood Shop Technician
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/BenDonaldson">Benjamin Donaldson</a>, Senior Critic; Photo Labs Coordinator
+					</li>
+					<li>
+						Isaac Brown, Photography Equipment Loan Technician
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/AlexanderValentine">Alexander Valentine</a>, Critic; Printshop Coordinator
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/AnahitaVossoughi">Anahita Vossoughi</a>, Critic; Associate Director of Digital Media
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/edgar-serrano">Edgar Serrano</a>, Equipment Loan and A/V Specialist
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>General Operations and Business Administration</strong>
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/denise-zaczek">Denise Zaczek</a>, Director of Finance and Administration 
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/robin-sarno">Robin Sarno</a>, Financial Team Lead
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/john-hogan">John P. Hogan</a>, Director of Facilities
+					</li>
+					<li>
+						Catherine Nelson, Fabrication Shop Co-Manager (Wood)
+					</li>
+					<li>
+						Julia Murray, Fabrication Shop Co-Manager (Metal)
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						<strong>Office of Development</strong>  
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/nicole-freeman">Nicole Freeman</a>, Director, Development and Alumni Relations
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/liz-landau">Elizabeth Landau</a>, Assistant Director, Development and Alumni Relations
+					</li>
+					<li>
+						<a href="https://www.art.yale.edu/janna-king">Janna King</a>, Program Coordinator
+					</li>
+				</ul>			
+			</div>
+			<div class="BulletinContainer">
+				<div class="card">
+					<h3>Yale Norfolk School of Art</h3>
+					<ul class="scrolling-list-module__list list--blank">
+						<li>
+							Undergraduate Summer Session
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/Byron%20Kim">Byron Kim</a>, Co-director   
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/Lisa%20Sigal">Lisa Sigal</a>, Co-director
+						</li>
+					</ul>				
+				</div>
+				<div class="card">
+					<h3>Faculty Emeriti</h3>
+					<ul class="scrolling-list-module__list list--blank">
+						<li>
+							<a href="https://www.art.yale.edu/sheila-levrant-de-bretteville">Sheila Levrant de Bretteville</a>
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RochelleFeinstein">Rochelle Feinstein</a>  
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RichardLytle">Richard Lytle</a>  
+						</li>
+						<li>
+							<a href="http://www.sammesser.com/">Samuel Messer</a>  
+							</li>
+						<li>
+							<a href="https://www.moma.org/artists/4490">Tod Papageorge</a>  
+						</li>
+						<li>
+							<a href="https://www.art.yale.edu/RobertStorr">Robert Storr</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</main>		
+		
+	<footer>
+		<div class="FooterTop">
+			<div>
+				<div>
+					Address and P.O. Box For The Yale School of Art:
+					<br>
+					Yale School of Art
+					1156 Chapel Street, POB 208339
+					New Haven, Connecticut, 06520-8339
+				</div>
+				<figure>
+					<figcaption>Social Media:</figcaption>
+					<div class="SocialMedia">
+						<a href="https://www.instagram.com/yaleschoolofart/" target="_blank" aria-label="Yale School of Art on Instagram"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank" aria-label="Yale School of Art on FaceBook"><i class="bi bi-facebook"></i></a>	
+						<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank" aria-label="Yale School of Art on YouTube"><i class="bi bi-youtube"></i></a>
+					</div>
+				</figure>
+			</div>
+				<figure>
+					<figcaption>Important Links</figcaption>
+					<ul>
+						<li><a href="https://www.art.yale.edu/about/support-the-school">Supporting the School</a></li>
+						<li><a href="https://www.art.yale.edu/about/visiting">Schedule a Visit</a></li>
+						<li><a href="https://www.art.yale.edu/about/contact">Contact</a></li>
+						<li><a href="https://www.art.yale.edu/sitemap">Sitemap</a></li>
+						<li><a href="https://your.yale.edu/policies-procedures/1605-web-accessibility-policy">Information on Accessibility at Yale</a></li>
+					</ul>
+				</figure>
+			<img src="img/YalePicture.jpg" alt="Yale Coat of Arms" height="100px" width="100px">
+		</div>
+		<div class="FooterBottom">
+			© 2025 Yale School of Art. All rights reserved.
+		</div>
+	</footer>	
+ </body>
