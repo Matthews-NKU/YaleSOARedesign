@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yale School of Art Redesign</title>
+  <style>
+		header { 
+			background-color: #EDECE8;
+			padding-left: 20px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #224570;
+		}
+		header img {
+			vertical-align: middle;
+			height: 70px;
+			width: auto;
+		}
+		.YaleTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.SchoolTitle {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 35px;
+		}
+		.Navigation {
+			display: flex;
+			align-items: flex-start;	
+			padding-left: 20px;
+		}
+		.Navigation a {
+			color: #224570;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}	
+		.HeaderButtons {
+			padding-right: 20px;
+		    display: flex;
+			align-items: center;
+		}
+		.ButtonDetails {
+			border-radius: 8px;
+			color: white;
+			background-color: orange;
+			font-size: 20px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		}
+		.OnThisPage {
+			padding-right: 15px;
+		}		
+		.OnThisPage a {
+			color: white;
+			text-decoration-thickness: 2px;
+			text-decoration-color: #286DC6;
+			padding-bottom: 15px;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.MainContainer {
+			display: flex;
+		}
+		.SideBar {
+			color: white;
+			flex: 1;
+			padding: 15px;
+			background-color: #001C42;
+		}
+		.Content {
+			flex-direction: column;
+			display: flex;
+			flex: 5;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		.card {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: orange;
+		}
+		.RoundedImage	{
+			border-radius: 15px;
+		}
+		.Content .card {
+			background-color: orange;
+			max-width: 60%;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			justify-content: flex-start;
+		}
+		.Content h2 {
+			align-self: flex-start;
+			margin-left: 20px;
+			color: #224570;
+			border-style: solid;
+			padding: 20px;
+		}
+		.BulletinContainer, .SOAcontainer {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 20px;
+			justify-content: center;
+			gap: 25px;
+		}
+		.ContentCalendar {
+			border:1px solid #eee; 
+			border-radius:10px; 
+			padding:12px; 
+			margin:12px 0; 
+			background-color: #286DC6;
+		}
+		.SOAinfo {
+			background-color: #2E69B2;
+			color: white;
+			gap: 25px; 
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			font-size: 25px;
+		}
+		.SOAtext {
+			padding: 20px;
+		}
+		.SOAimg {
+			width: 100%;
+			display: block;
+			margin: 0;
+		}
+		.FooterTop {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			color: #224570;
+			justify-content: space-between;
+		}
+		.FooterBottom {
+			display: flex;
+			background-color: #EDECE8;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid #ccc;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 13px;
+			color: #555;
+		}
+		footer a {
+			color: #224570;
+		}
+		.SocialMedia {
+			font-size: 50px;
+			padding-top: 15px;
+		}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" href="img/YalePicture.jpg">
+ </head>
+ <body>
+	<header>
+		<div>
+			<h1>
+				<img src="img/YalePicture.jpg" alt="Yale Coat of Arms">
+					<span class="YaleTitle">Yale</span>
+					<span class="SchoolTitle">SCHOOL OF ART</span>
+			</h1>
+			<nav class="Navigation" aria-label="Main Navigation">
+				<a href="DouglasMatthews_FinalGroup.html">Home </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup2.html">About the School </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup3.html">Apply to the School</a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup4.html">Exhibitions </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup5.html">Publications </a> &nbsp;
+				<a href="https://www.art.yale.edu/news">News </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup7.html">Public Events </a> &nbsp;
+				<a href="DouglasMatthews_FinalGroup8.html">Faculty & Staff </a> &nbsp;
+			</nav>
+		</div>
+		<div class="HeaderButtons">
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Login</button></a>
+			<a href="https://www.art.yale.edu/login"><button type="button" class="ButtonDetails">Edit This Page</button></a>
+		</div>
+	</header>
+	
+	<main class="MainContainer">
+		<div class="SideBar">
+			<div class="OnThisPage">
+				<p>On this page:</p>
+					<ul>
+						<li><a href=#Happening@SOA> Happening at SOA </a></li>
+						<li><a href=#CommunityBulletinBoard> Community Bulletin Board </a></li>
+						<li><a href=#CalendarSection> Calendar </a></li>
+					</ul>
+			</div>
+			<div class="card">
+				This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community—graduate students, faculty, staff, and alums—have the ability to add new content and pages, and to edit most of the site’s existing content.
+				Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+			</div>
+			<img src="img/YaleChair.jpg" alt="Chair With a Yale Blanket">
+			<div class="card">
+				Sign Up For The Yale Newsletter Here: <br>
+				<a href="https://yale.us14.list-manage.com/subscribe?u=c7ccb8ef693ab66aa235e6c03&id=570166342a">Form For Newsletter</a> 
+				<br>
+				We publish two newsletters during the academic year:
+				<br>
+				News From New Haven — A public monthly newsletter about news and events happening on campus.
+				<br>
+				Week at SoA — A weekly community-only email listing SoA events as well as public and university events in New Haven.
+			</div>
+		</div>
+		<div class="Content">
+			<div class="SOAinfo">
+				<p class="SOAtext">The School of Art is one of Yale’s Graduate & Professional Schools conferring MFA degrees in Graphic Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students.
+				</p>
+				<img src="img/streetHall.jpg" class="SOAimg">
+			</div>
+			<h2 id="Happening@SOA">Happening at SoA </h2>
+			<div class="SOAcontainer">
+					<div class="card">
+						<a href="https://www.art.yale.edu/news/visiting-artist-lectures/fall-2025">See the Fall 2025 Visiting Artist lecture schedule here (in progress) </a>
+						<br>
+						<a href="https://www.art.yale.edu/news/events/visiting-artist-lectures">VA archives here </a>
+						<br>
+						<a href="https://www.art.yale.edu/about/visiting">Fall 2025 exhibitions + schedule here </a>
+					</div>
+				<img src="img/SOAPic.jpg" height="200" width="250" class="RoundedImage">
+			</div>
+			<h2 id="CommunityBulletinBoard">Community Bulletin Board: </h2>
+			<div class="BulletinContainer">
+				<div class="card">
+					<h4>From our friends at the Yale Center for Environmental Justice</h4>
+					The Yale Center for Environmental Justice is in the process of planning our fourth annual Global Environmental Justice Conference, with this year focusing on the theme of “Environmental Joy.” The conference aims to explore the ways in which environmental and climate justice and the communities engaged in that work generate joy. Guided by the notion that the ultimate goal of most environmental and climate work is to alleviate suffering and increase wellbeing, Environmental Joy will explore and celebrate the diverse ways that environmental justice achieves this goal.
+
+					One facet of the conference programming we hope to organize is a juried art show soliciting works from artists around the world on the theme of Environmental Joy to be showcased in an exhibition during the conference. We are currently seeking any interested students or faculty who would be interested in supporting the planning and execution of this call for art. If you’re interested in learning more about the opportunity, please contact Julia Simon at julia.simon@yale.edu.
+				</div>
+				<div class="card">
+					<h4>Faculty/Alumni: Post Your Art Apprenticeship/Internship Opportunities for Undergraduates</h4>
+				The Yale Arts Apprenticeship Program is an initiative that connects Yale undergraduates, particularly those on financial aid, with professional arts practitioners of any discipline. As an option within Yale’s Summer Experience Award (SEA) funding model, the Arts Apprenticeship must fulfill the same basic requirements. Additional details, as well as those specific to the Arts Apprenticeship are included below. Yale faculty, alumni, or other arts practitioners interested in featuring positions through the program should contact Yale’s Creative Careers advisor. Which Opportunities are Eligible? Must be at least 30 hours/week, for at least 8-weeks over the summer months. Those 8-weeks do not have to be continuous if the mentoring Arts Practitioner agrees on a different schedule. The time commitment need not all be in direct contact with the Arts Practitioner. Independent projects, tasks, research, etc. can comprise much of the experience, as long as the Arts Practitioner is checking in regularly with the student to provide oversight and career-based context. The opportunity cannot be with a for-profit organization. The engagement for an Arts Apprenticeship should be directly with an individual Arts Practitioner and not with a company. The only exception to this would be if the company overseeing the apprenticeship were a registered non-profit organization. For more information: https://ocs.yale.edu/channels/arts-apprenticeship/ To post a job, contact: https://ocs.yale.edu/staff-list/#derek-i-webster
+				</div>
+			</div>
+			<h2 id="CalendarSection"> On The Calendar: </h2>
+			<div class="ContentCalendar">
+				<a name="mmi-32022"></a>
+				<div id="mmi-32022" class="scrolling-text-module colspan-4 rag measurable magic-module" data-event-category="magic_module/scrolling_text_module/32022" data-event-label="Scrolling Text Module 32022 (11/25)" data-instance-id="32022" data-id="99065">
+					<div class="scrolling-text-module__inner" style="max-height: 240.0em" tabindex="0">
+			
+						<div class="eca-app-container" data-widgetuuid="483836a2-b66a-4867-971b-9622aa521bd3"></div>
+
+						<script>(function () {
+						window.eventCalId=5535;
+						var integrationScript = document.createElement("script");
+						integrationScript.async = 1;
+						integrationScript.setAttribute("src", "https://api.eventcalendarapp.com/integration-script.js");
+						document.head.appendChild(integrationScript);
+						if (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init("483836a2-b66a-4867-971b-9622aa521bd3");}})();
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>		
+		
+	<footer>
+		<div class="FooterTop">
+			<div>
+				<div>
+					Address and P.O. Box For The Yale School of Art:
+					<br>
+					Yale School of Art
+					1156 Chapel Street, POB 208339
+					New Haven, Connecticut, 06520-8339
+				</div>
+				<figure>
+					<figcaption>Social Media:</figcaption>
+					<div class="SocialMedia">
+						<a href="https://www.instagram.com/yaleschoolofart/" target="_blank" aria-label="Yale School of Art on Instagram"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank" aria-label="Yale School of Art on FaceBook"><i class="bi bi-facebook"></i></a>	
+						<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank" aria-label="Yale School of Art on YouTube"><i class="bi bi-youtube"></i></a>
+					</div>
+				</figure>
+			</div>
+				<figure>
+					<figcaption>Important Links</figcaption>
+					<ul>
+						<li><a href="https://www.art.yale.edu/about/support-the-school">Supporting the School</a></li>
+						<li><a href="https://www.art.yale.edu/about/visiting">Schedule a Visit</a></li>
+						<li><a href="https://www.art.yale.edu/about/contact">Contact</a></li>
+						<li><a href="https://www.art.yale.edu/sitemap">Sitemap</a></li>
+						<li><a href="https://your.yale.edu/policies-procedures/1605-web-accessibility-policy">Information on Accessibility at Yale</a></li>
+					</ul>
+				</figure>
+			<img src="img/YalePicture.jpg" alt="Yale Coat of Arms" height="100px" width="100px">
+		</div>
+		<div class="FooterBottom">
+			© 2025 Yale School of Art. All rights reserved.
+		</div>
+	</footer>	
+ </body>
